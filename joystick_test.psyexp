@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.85.6">
+  <Settings>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Experiment info" updates="None" val="{u'session': u'001', u'participant': u'2', u'interval': u'5'}" valType="code"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Save excel file" updates="None" val="True" valType="bool"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Window size (pixels)" updates="None" val="[800, 600]" valType="code"/>
+    <Param name="Full-screen window" updates="None" val="False" valType="bool"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="OSF Project ID" updates="None" val="" valType="str"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="expName" updates="None" val="joystick_test" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+  </Settings>
+  <Routines>
+    <Routine name="trial">
+      <TextComponent name="text">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every frame" val="0" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, .2)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'y','n','left','right','space'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="from psychopy.hardware import joystick&amp;#10;from psychopy import visual&amp;#10;&amp;#10;joystick.backend='pyglet'  # must match the Window&amp;#10;&amp;#10;nJoys = joystick.getNumJoysticks()  # to check if we have any&amp;#10;id = 0&amp;#10;joy = joystick.Joystick(id)  # id must be &lt;= nJoys - 1&amp;#10;&amp;#10;nAxes = joy.getNumAxes()  # for interest&amp;#10;&amp;#10;&amp;#10;# Create some text box objects for debugging purposes&amp;#10;shouldBeReinforced_txt = visual.TextBox(window=win, text=' ', font_size=20,&amp;#10;                         font_color=[-1, -1, 1], size=(1.9, .3), pos=(0.0, 0.4), &amp;#10;                         grid_horz_justification='center', units='norm')&amp;#10;&amp;#10;reward_txt = visual.TextBox(window=win, text=' ', font_size=20,&amp;#10;                         font_color=[1, -1, 1], size=(2, .4), pos=(0.0, 0.8), &amp;#10;                         grid_horz_justification='center', units='norm')&amp;#10;&amp;#10;def show_debugging_stuff():&amp;#10;    ''' set text for stims to show every frame '''&amp;#10;    shouldBeReinforced_txt.setText('Reinforce?: \n %s' %str(shouldBeReinforced))&amp;#10;    reward_txt.setText('reward!')# %str(reward))&amp;#10;    #isReinforced_txt.setText('isReinforced: %s' %str(isReinforced))&amp;#10;&amp;#10;    # Draw stim on screen&amp;#10;    shouldBeReinforced_txt.draw()&amp;#10;&amp;#10;debugging = True&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="# Parameters for the RI &amp;#10;shouldBeReinforced = 0 # flag to set next reinforcer for RI schedule&amp;#10;&amp;#10;tickClock = core.CountdownTimer(1) # this is to tick every second&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="#### EACH FRAME SNIPPET ####&amp;#10;&amp;#10;# show debugging stuff?&amp;#10;if debugging:&amp;#10;    show_debugging_stuff()&amp;#10;&amp;#10;# Get position of x and y in joystick&amp;#10;joy_x, joy_y = joy.getX(), joy.getY()&amp;#10;&amp;#10;# check whether reward is available to collect&amp;#10;# this runs only if a response is not being made&amp;#10;# this avoids rewarding maintaining the joystick in a position&amp;#10;if joy_x not in [-1, 1] and joy_y not in [-1, 1]:&amp;#10;    if not shouldBeReinforced and tickClock.getTime() &lt;= 0:&amp;#10;        shouldBeReinforced = np.random.binomial(1, 1/int(expInfo['interval']))&amp;#10;        tickClock.reset()&amp;#10;&amp;#10;text.setText(&quot;&quot;)&amp;#10;&amp;#10;if joy_x == -1:&amp;#10;    text.setText(&quot;left resp&quot;)&amp;#10;    if shouldBeReinforced:&amp;#10;        reward_txt.draw()&amp;#10;        shouldBeReinforced = 0&amp;#10;elif joy_x == 1:&amp;#10;    text.setText(&quot;right resp&quot;)&amp;#10;    if shouldBeReinforced:&amp;#10;        reward_txt.draw()&amp;#10;        shouldBeReinforced = 0&amp;#10;elif joy_y == -1:&amp;#10;    text.setText(&quot;up resp&quot;)&amp;#10;    if shouldBeReinforced:&amp;#10;        reward_txt.draw()&amp;#10;        shouldBeReinforced = 0&amp;#10;elif joy_y == 1:&amp;#10;    text.setText(&quot;down resp&quot;)&amp;#10;    if shouldBeReinforced:&amp;#10;        reward_txt.draw()&amp;#10;        shouldBeReinforced = 0&amp;#10;&amp;#10;#### END EACH FRAME SNIPPET ####" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="trial"/>
+  </Flow>
+</PsychoPy2experiment>

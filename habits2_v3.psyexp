@@ -1,0 +1,2046 @@
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="1.90.1">
+  <Settings>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="Experiment info" updates="None" val="{u'participant': u'01', u'credits_per_rnf': u'25', u'schedule': u'RI', u'interval': u'10', u'session': u'1', u'experimenter': u'o', u'cost_response': u'1'}" valType="code"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Units" updates="None" val="use prefs" valType="str"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Window size (pixels)" updates="None" val="[1920, 1200]" valType="code"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="OSF Project ID" updates="None" val="" valType="str"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="expName" updates="None" val="habits_2" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+  </Settings>
+  <Routines>
+    <Routine name="contingency_test">
+      <TextComponent name="contingency_test_instr">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="contingency_test_instr" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Please indicate which coin was associated with the stimuli below.&amp;#10;&amp;#10;Press &quot;g&quot; for gold or &quot;s&quot; for silver.&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_ct">
+        <Param name="correctAns" updates="constant" val="$corrResp_ct" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_ct" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="&quot;g&quot;, &quot;s&quot;" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="first key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="stim_contingency_test">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="stim_contingency_test" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, -0.6)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$stimulus" valType="str"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="choice_test">
+      <PolygonComponent name="circle_resp_choice">
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="shape" updates="constant" val="triangle" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1.000,0.004,-1.000]" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="nVertices" updates="constant" val="3" valType="int"/>
+        <Param name="opacity" updates="set every frame" val="0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="name" updates="None" val="circle_resp_choice" valType="code"/>
+        <Param name="lineColor" updates="constant" val="$[1.000,0.004,-1.000]" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="code"/>
+      </PolygonComponent>
+      <KeyboardComponent name="key_resp_4">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_4" valType="code"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'up', 'down', 'left', 'right', 'escape'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="stim_choice1">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="stim_choice1" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="set every repeat" val="$position1" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$stimulus_choice1" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="stim_choice_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="stim_choice_2" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="set every repeat" val="$position2" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$stimulus_choice2" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
+      </ImageComponent>
+      <CodeComponent name="code_3">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_3" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;#### BEGIN ROUTINE SNIPPET FOR CHOICE TEST ####&amp;#10;phase = &quot;choice&quot; &amp;#10;&amp;#10;shouldBeReinforced = 0 # just in case not running the training stage for debugging purposes&amp;#10;tickClock = core.CountdownTimer(1) # same reason as line above&amp;#10;&amp;#10;if expInfo['session'] == 1: # set rep of choice trial to zero if in first session (no devaluation yet)&amp;#10;    trials_2.nReps = 0&amp;#10;&amp;#10;shouldBeReinforced_1, shouldBeReinforced_2 = 0, 0 # set rnf flag for two options&amp;#10;&amp;#10;tickClock1, tickClock2 = core.CountdownTimer(1), core.CountdownTimer(1) # this is to tick every second for reward availability&amp;#10;&amp;#10;#### END BEGIN ROUTINE SNIPPET FOR CHOICE TEST ####&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;#### EACH FRAME SNIPPET ####&amp;#10;&amp;#10;# show debugging stuff?&amp;#10;#if debugging:&amp;#10;#    show_debugging_stuff()&amp;#10;&amp;#10;# Get position of x and y in joystick&amp;#10;joy_x, joy_y = joy.getX(), joy.getY()&amp;#10;&amp;#10;joy_posx_array.append(joy_x)&amp;#10;joy_posy_array.append(joy_y)&amp;#10;&amp;#10;if len(joy_posx_array) &gt; 2:&amp;#10;    joy_posx_array.pop(0)&amp;#10;&amp;#10;if len(joy_posy_array) &gt; 2:&amp;#10;    joy_posy_array.pop(0)&amp;#10;&amp;#10;# check whether reward is available to collect&amp;#10;# this runs only if a response is not currently being made&amp;#10;# this avoids rewarding maintaining the joystick in a position&amp;#10;&amp;#10;if joy_posx_array not in [[1, 1], [-1,-1]] and joy_posy_array not in [[1, 1], [-1,-1]]: # pos_array not in [[&quot;left&quot;,&quot;left&quot;], [&quot;right&quot;,&quot;right&quot;], [&quot;up&quot;, &quot;up&quot;],[&quot;down&quot;,&quot;down&quot;]]:&amp;#10;&amp;#10;    if not shouldBeReinforced and tickClock.getTime() &lt;= 0:&amp;#10;        shouldBeReinforced = np.random.binomial(1, 1/int(expInfo[&quot;interval&quot;]))&amp;#10;        tickClock.reset()&amp;#10;&amp;#10;    # assign key_resp to &quot;up&quot;, &quot;down&quot;, etc.&amp;#10;    if joy_y == -1:&amp;#10;        key_resp_4.keys = &quot;up&quot;&amp;#10;        #key_resp_4.rt = str(globalClock.getTime())&amp;#10;        resp_made() &amp;#10;    elif joy_y == 1:&amp;#10;        key_resp_4.keys = &quot;down&quot;&amp;#10;        #key_resp_4.rt = str(globalClock.getTime())&amp;#10;        resp_made()&amp;#10;    elif joy_x == -1:&amp;#10;        key_resp_4.keys = &quot;left&quot;&amp;#10;        #key_resp_4.rt = str(globalClock.getTime())&amp;#10;        resp_made()&amp;#10;    elif joy_x == 1:&amp;#10;        key_resp_4.keys = &quot;right&quot;&amp;#10;        #key_resp_4.rt = str(globalClock.getTime())&amp;#10;        resp_made()&amp;#10;&amp;#10;&amp;#10;#### END EACH FRAME SNIPPET ####&amp;#10;" valType="extendedCode"/>
+      </CodeComponent>
+      <ImageComponent name="curtain_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="curtain_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/curtain.jpg" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instr_test_2">
+      <TextComponent name="instr_test_txt_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_test_txt_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="One of the piggy banks is now full.&amp;#10;&amp;#10;Please call the experimenter." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_instr1_2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_instr1_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instr_before_consumption_test">
+      <TextComponent name="instr_devaluation_txt_3">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_devaluation_txt_3" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Free Coin Collection!&amp;#10;&amp;#10;For a limited amount of time you will have the chance to collect gold and silver coins by clicking on them with the mouse. &amp;#10;&amp;#10;We will deposit the coins you collect in their respective piggy banks, if they are not already full.&amp;#10;&amp;#10;You will have 7 seconds to collect as many coins as you like. Get ready!&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)  " valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_15">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_15" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instr1_1">
+      <TextComponent name="instr1_1_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr1_1_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="During each trial, you will be allowed to perform one of four actions with the joystick: move left, move right, push and pull. &amp;#10;&amp;#10;Each allowed movement comes at a cost of 0.01 dollars.&amp;#10;&amp;#10;You will know which action is the correct one by a stimulus that will appear on the screen. An incorrect action will have no effect. &amp;#10;&amp;#10;The following screens will present the stimuli and the correct action you need to take when you see each stimulus.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_11">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_11" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="False" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instr1">
+      <TextComponent name="instr_test_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_test_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="&amp;#10;Welcome. In this experiment you will have the chance to earn some extra money.&amp;#10;&amp;#10;Using your joystick, you will take actions to win coins that will be cashed out for real money. Therefore, the more coins you collect, the more cash we will pay you when you are finished.&amp;#10;&amp;#10;Coins can be silver or gold and are worth 0.25 dollars, regardless of color.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_instr1">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_instr1" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instr2_3">
+      <TextComponent name="instr2_3_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr2_3_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="&amp;#10;&amp;#10;Every time you perform the action that corresponds to the stimulus shown on the screen, a triangle will appear at the top of the screen signalling that the relevant response has been made. &amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;Two of the actions (for ex., left and right) will give you gold coins when you are rewarded; the other two (for ex., up and down) will give you silver coins when you are rewarded. &amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_10">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_10" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="trian_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="trian_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0.3)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/triangle_img.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.4, 0.4)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="coin1_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="coin1_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.2, -0.4)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="coin2_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="coin2_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.2, -0.4)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="piggy_bank_partially_full">
+      <TextComponent name="piggy_bank_text">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="piggy_bank_text" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$piggy_message" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="press_to_continue_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="press_to_continue_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_16">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_16" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instr_stim4">
+      <TextComponent name="instr_stim4_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_stim4_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Here is another one of the stimuli you will see.&amp;#10;&amp;#10;This cube has a button on the right side, so the correct response is to push the button by moving the joystick to the left, as shown in the picture to the right of the cube. Feel free to try it!&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_9">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_9" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="resp_left_image">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="resp_left_image" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/left_resp_img.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="joy_left_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="joy_left_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/joy_img_left.jpg" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instr2">
+      <TextComponent name="instr2_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr2_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_instr2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_instr2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="instr2_img1">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr2_img1" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$instr_img" valType="str"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instr2_2"/>
+    <Routine name="instr_stim1">
+      <TextComponent name="instr_stim1_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_stim1_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Below is one of the stimuli you will see.&amp;#10;&amp;#10;This stimuli is a cube that has a button on the left side, so the correct response is to push the button by moving the joystick to the right, as shown in the picture to the right of the cube. &amp;#10;&amp;#10;Feel free to try it! &amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_6">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_6" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="resp_right_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="resp_right_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/right_resp_img.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="joy_right_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="joy_right_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/joy_img_right.jpg" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instr_stim3">
+      <TextComponent name="instr_stim3_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_stim3_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="&amp;#10;Here is another one of the stimuli you will see.&amp;#10;&amp;#10;This cube has a button on the front, so the correct response is to push the button by pushing the joystick away from you, as shown in the picture to the right of the cube. Feel free to try it!&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_8">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_8" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="resp_up_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="resp_up_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/up_resp_img.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="joy_up_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="joy_up_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/joy_img_up.jpg" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instr_stim2">
+      <TextComponent name="instr_stim2_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_stim2_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Here is another one of the stimuli you will see.&amp;#10;&amp;#10;This cube has a button on the top, so the correct response is to push the button by pulling the joystick towards you, as shown in the picture to the right of the cube. Feel free to try it!&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_7">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_7" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="resp_down_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="resp_down_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/down_resp_img.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="joy_down_img">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="joy_down_img" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.2, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/joy_img_down.jpg" valType="str"/>
+        <Param name="size" updates="constant" val="(0.35, 0.35)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="consumption_test1">
+      <MouseComponent name="mouse">
+        <Param name="name" updates="None" val="mouse" valType="code"/>
+        <Param name="timeRelativeTo" updates="constant" val="routine" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="never" valType="str"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="clickable" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="saveParamsClickable" updates="constant" val="name," valType="code"/>
+        <Param name="saveMouseState" updates="None" val="never" valType="str"/>
+      </MouseComponent>
+      <ImageComponent name="gold1">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold1" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.1, 0.1)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold2">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold2" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0.3)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold3">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold3" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.5, 0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold4">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold4" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.8, 0.1)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold5">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold5" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.3, -0.9)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold6">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold6" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.26, 0.6)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold7">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold7" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.3, 0.86)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold8">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold8" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.4, -0.75)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold9">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold9" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.35, -0.8)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="gold10">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="gold10" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.9, 0.9)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/gold_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver1">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver1" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.12, 0)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22, 0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver2">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver2" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.2, 0.28)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22, 0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver3">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver3" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.26, -0.2)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22,0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver4">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver4" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.2, -0.6)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22,0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver5">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver5" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.7, -0.8)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22, 0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver6">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver6" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.1, -0.9)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22,0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver7">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver7" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.28, 0.7)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22,0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver8">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver8" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.1, -0.7)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22,0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver9">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver9" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.7, -0.85)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22,0.22)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="silver10">
+        <Param name="opacity" updates="set every frame" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="silver10" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="7" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.6, 0.75)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/silver_coin.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22,0.22)" valType="code"/>
+      </ImageComponent>
+      <CodeComponent name="code_6">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_6" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="# initialise whether coins have been collected or not&amp;#10;&amp;#10;# initialise &quot;collected&quot; flag for gold coins&amp;#10;gold1_collected = 0&amp;#10;gold2_collected = 0&amp;#10;gold3_collected = 0&amp;#10;gold4_collected = 0&amp;#10;gold5_collected = 0&amp;#10;gold6_collected = 0&amp;#10;gold7_collected = 0&amp;#10;gold8_collected = 0&amp;#10;gold9_collected = 0&amp;#10;gold10_collected = 0&amp;#10;&amp;#10;# initialise &quot;collected&quot; flag for silver coins&amp;#10;silver1_collected = 0&amp;#10;silver2_collected = 0&amp;#10;silver3_collected = 0&amp;#10;silver4_collected = 0&amp;#10;silver5_collected = 0&amp;#10;silver6_collected = 0&amp;#10;silver7_collected = 0&amp;#10;silver8_collected = 0&amp;#10;silver9_collected = 0&amp;#10;silver10_collected = 0&amp;#10;&amp;#10;# initialise number of collected coins of each type&amp;#10;nGold, nSilver = 0, 0" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="thisExp.addData('nGold', nGold)&amp;#10;thisExp.addData('nSilver', nSilver)&amp;#10;thisExp.nextEntry()" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;# if mouse is pressed in one coin, make it disappear and increase nGold or nSilver&amp;#10;&amp;#10;# gold&amp;#10;&amp;#10;if not gold1_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold1):&amp;#10;        gold1_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold1_collected:&amp;#10;    gold1.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold2_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold2):&amp;#10;        gold2_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold2_collected:&amp;#10;    gold2.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold3_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold3):&amp;#10;        gold3_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold3_collected:&amp;#10;    gold3.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold4_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold4):&amp;#10;        gold4_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold4_collected:&amp;#10;    gold4.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold5_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold5):&amp;#10;        gold5_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold5_collected:&amp;#10;    gold5.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold6_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold6):&amp;#10;        gold6_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold6_collected:&amp;#10;    gold6.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold7_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold7):&amp;#10;        gold7_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold7_collected:&amp;#10;    gold7.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold8_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold8):&amp;#10;        gold8_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold8_collected:&amp;#10;    gold8.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold9_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold9):&amp;#10;        gold9_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold9_collected:&amp;#10;    gold9.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not gold10_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(gold10):&amp;#10;        gold10_collected = 1&amp;#10;        nGold += 1 # increase number of coins collected for this type of coin&amp;#10;elif gold10_collected:&amp;#10;    gold10.setOpacity(0) # hide the stim&amp;#10;&amp;#10;# silver coins&amp;#10;&amp;#10;if not silver1_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver1):&amp;#10;        silver1_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver1_collected:&amp;#10;    silver1.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver2_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver2):&amp;#10;        silver2_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver2_collected:&amp;#10;    silver2.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver3_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver3):&amp;#10;        silver3_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver3_collected:&amp;#10;    silver3.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver4_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver4):&amp;#10;        silver4_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver4_collected:&amp;#10;    silver4.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver5_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver5):&amp;#10;        silver5_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver5_collected:&amp;#10;    silver5.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver6_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver6):&amp;#10;        silver6_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver6_collected:&amp;#10;    silver6.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver7_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver7):&amp;#10;        silver7_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver7_collected:&amp;#10;    silver7.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver8_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver8):&amp;#10;        silver8_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver8_collected:&amp;#10;    silver8.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver9_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver9):&amp;#10;        silver9_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver9_collected:&amp;#10;    silver9.setOpacity(0) # hide the stim&amp;#10;&amp;#10;if not silver10_collected: # while coin has not yet been clicked on&amp;#10;    if mouse.isPressedIn(silver10):&amp;#10;        silver10_collected = 1&amp;#10;        nSilver += 1 # increase number of coins collected for this type of coin&amp;#10;elif silver10_collected:&amp;#10;    silver10.setOpacity(0) # hide the stim&amp;#10;&amp;#10;" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="shouldRun_2">
+      <CodeComponent name="code_5">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_5" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;# This snippet checks whether session number is 1 or 2&amp;#10;# If it is 1, it does not present the devaluation phase&amp;#10;# (the devaluation is done only at the end of the 2nd session)&amp;#10;&amp;#10;if expInfo['session'] == '2':&amp;#10;    print(&quot;session 2&quot;)&amp;#10;    nRepsChoice = 1&amp;#10;elif expInfo['session'] == '1':&amp;#10;    nRepsChoice = 0&amp;#10;    print(&quot;session 1&quot;)&amp;#10;else:&amp;#10;    print(&quot;something diff from 1 or 2 for session number; weird!&quot;)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="piggy_bank_full">
+      <TextComponent name="instr_devaluation_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_devaluation_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="The following piggy bank:&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;is now full. &amp;#10;&amp;#10;No further coins can be deposited in this piggy bank.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <TextComponent name="devalued_piggy_bank_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="devalued_piggy_bank_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$devalued_coin" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.2)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.25" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_5">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_5" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'c'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="instr_2_3_1">
+      <TextComponent name="instr_2_3_1_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_2_3_1_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="During each trial, the coin (either silver or gold) will flash at the center of the screen when you are rewarded. &amp;#10;&amp;#10;We will be collecting these coins in two different piggy banks outside the room, one for the silver coins and one for the gold coins, provided they are not full. &amp;#10;&amp;#10;Remember: both gold and silver coins are worth the same.&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_18">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_18" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="piggy_bank_msg2"/>
+    <Routine name="shouldRun">
+      <CodeComponent name="code_4">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="if trials_3.thisRepN == 0:&amp;#10;    print(&quot;first rep; run the consump test&quot;)&amp;#10;    nRepsConsumptionTest = 1&amp;#10;elif trials_3.thisRepN == 1:    &amp;#10;    print(&quot;Last rep; don't run the consump test&quot;)&amp;#10;    nRepsConsumptionTest = 1&amp;#10;    nRepsConsumptionTest = 0" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="choice">
+      <PolygonComponent name="circle_resp_2">
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="shape" updates="constant" val="regular polygon..." valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1.000,0.004,-1.000]" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="nVertices" updates="constant" val="90" valType="int"/>
+        <Param name="opacity" updates="set every frame" val="0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="name" updates="None" val="circle_resp_2" valType="code"/>
+        <Param name="lineColor" updates="constant" val="$[1.000,0.004,-1.000]" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="code"/>
+      </PolygonComponent>
+      <ImageComponent name="stim_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="stim_2" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, -0.5)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$machine" valType="str"/>
+        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+      </ImageComponent>
+      <TextComponent name="credits_txt_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="credits_txt_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="credits: " valType="str"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.9)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <TextComponent name="number_of_credits_txt_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="number_of_credits_txt_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="red" valType="str"/>
+        <Param name="text" updates="set every frame" val="$credits" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.75)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.12" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="correctAns" updates="constant" val="$corrAns" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="set every repeat" val="'left'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="first key" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+      <ImageComponent name="coin_2">
+        <Param name="opacity" updates="set every frame" val="0" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="coin_2" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0.6)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$coin_img" valType="str"/>
+        <Param name="size" updates="constant" val="(0.25, 0.25)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="b'shouldRun_3'">
+      <CodeComponent name="code_7">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_7" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;# This snippet checks whether the repetition from the outer loop is the last one or not&amp;#10;# If it is 1 (the last one), it does not present the consumption test&amp;#10;&amp;#10;if trials_3.thisRepN == 0:&amp;#10;    print(&quot;thisRepN: 0&quot;)&amp;#10;    nRepsConsumptionTest = 1&amp;#10;elif trials_3.thisRepN &gt; 0:&amp;#10;    nRepsConsumptionTest = 0&amp;#10;    print(&quot;last repeat; don't present consumption test&quot;)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="instr_choice_test">
+      <TextComponent name="instr_devaluation_txt_2">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_devaluation_txt_2" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="In this last part of the experiment you will have the opportunity to perform two actions during a trial.&amp;#10;&amp;#10;The allowed actions will be signalled by their respective stimuli. For example, if you see the stimuli below you will be allowed to make left and up responses at the same time.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;This time we will not show you the coins you are earning, the flashing triangle, nor the earnings you have so far. However, we will keep inserting the coins you win in their respective piggy banks. Apart from that, nothing about the game has changed, and you should &amp;#10;continue playing as before. &amp;#10;&amp;#10;&amp;#10; &amp;#10;(Press any key to continue)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_14">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_14" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <ImageComponent name="resp1_img_example">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="resp1_img_example" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(-0.2, 0)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/left_resp_img.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
+      </ImageComponent>
+      <ImageComponent name="resp2_img_example">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="resp2_img_example" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0.2, 0)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="constant" val="stim/up_resp_img.png" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instr_2_4">
+      <TextComponent name="instr_2_4_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="instr_2_4_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Given the nature of the task, not every correct joystick action you make during each trial will give you a coin. &amp;#10;&amp;#10;Given that 0.01 dollars will be subtracted from your earnings every time you perform a correct action, it is to your advantage not to perform the action too many times. This applies to all actions, since they only differ in whether they give you silver or gold coins. &amp;#10;&amp;#10;Good luck!&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Please call the experimenter now to start the experiment)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_13">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_13" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'c'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="training">
+      <KeyboardComponent name="key_resp_2">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_2" valType="code"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'up', 'down', 'left', 'right', 'escape'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <PolygonComponent name="circle_resp">
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0.85)" valType="code"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="shape" updates="constant" val="triangle" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="nVertices" updates="constant" val="3" valType="int"/>
+        <Param name="opacity" updates="set every frame" val="0" valType="code"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="name" updates="None" val="circle_resp" valType="code"/>
+        <Param name="lineColor" updates="constant" val="$[1.000,0.004,-1.000]" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="2" valType="code"/>
+      </PolygonComponent>
+      <ImageComponent name="stim">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="stim" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="set every repeat" val="$position" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$stimulus" valType="str"/>
+        <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
+      </ImageComponent>
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="&amp;#10;#### BEGIN EXPERIMENT SNIPPET ####&amp;#10;&amp;#10;# Import joystick libraries&amp;#10;from psychopy.hardware import joystick&amp;#10;from psychopy import visual&amp;#10;&amp;#10;joystick.backend='pyglet'  # must match the Window created&amp;#10;&amp;#10;nJoys = joystick.getNumJoysticks()  # to check if we have any joysticks connected&amp;#10;id = 0&amp;#10;joy = joystick.Joystick(id)  # id must be &lt;= nJoys - 1&amp;#10;&amp;#10;# Load sounds&amp;#10;coin_sound = sound.Sound('sounds/coin.wav')&amp;#10;reward_sound = sound.Sound('sounds/reward2.wav')&amp;#10;&amp;#10;# Create a csv file to save response times etc. Previous one is the native Psychopy file.&amp;#10;#file_name = 'data/S%s_session%s_%s_dev%s' %(expInfo['participant'], expInfo['session'], expInfo['date'], expInfo['devalued'])&amp;#10;#csv_file = open(file_name+'.csv', 'wb')&amp;#10;#writer_object = csv.writer(csv_file, delimiter=&quot;,&quot;) # create object to write in&amp;#10;&amp;#10;#writer_object.writerow(['resp', 't', 'participant', 'trial', 'session'])&amp;#10;&amp;#10;# Initialise some variables&amp;#10;&amp;#10;# Should we show the debugging msgs on screen?&amp;#10;# In the present experiment, this means showing the credits on the screen&amp;#10;debugging = True&amp;#10;&amp;#10;# Initialise credits&amp;#10;credits = 0.0&amp;#10;&amp;#10;nReinforcers = 0&amp;#10;nResp = 0&amp;#10;&amp;#10;# create array to save last two frames for joystick position&amp;#10;joy_posx_array, joy_posy_array = [], []&amp;#10;window = 2 # maximum length of array (2 if you want the joy pos for 2 frames, for ex)&amp;#10;&amp;#10;# Create some text box objects for debugging purposes&amp;#10;num_credits_txt = visual.TextBox(window=win, text=' ', font_size=50,&amp;#10;                         font_color=[-1, -1, 1], size=(1.9, .3), pos=(0.7, -0.95), &amp;#10;                         grid_horz_justification='center', units='norm')&amp;#10;&amp;#10;joy_pos_array_txt = visual.TextBox(window=win, text='', font_size=20,&amp;#10;                         font_color=[1, 1, 1], size=(1.9, .3), pos=(-0.7, 0.5), &amp;#10;                         grid_horz_justification='center', units='norm')&amp;#10;&amp;#10;credits_title_txt = visual.TextBox(window=win, text='Credits', font_size=80,&amp;#10;                         font_color=[1,1,1], size=(1.9, .3), pos=(0.7, -0.8), &amp;#10;                         grid_horz_justification='center', units='norm')&amp;#10;&amp;#10;def show_debugging_stuff():&amp;#10;    ''' set text for stims to show every frame '''&amp;#10;    #shouldBeReinforced_txt.setText('Reinforce?: %d' %shouldBeReinforced)&amp;#10;    #joy_pos_array_txt.setText(&quot;joy_resp_array: \n&quot; + str(joy_pos_array))&amp;#10;    num_credits_txt.setText(str(credits))&amp;#10;    # Draw stim on screen&amp;#10;    #shouldBeReinforced_txt.draw()&amp;#10;    #joy_pos_array_txt.draw()&amp;#10;    credits_title_txt.draw()&amp;#10;    num_credits_txt.draw()&amp;#10;&amp;#10;def checkRnf():&amp;#10;    ''' Once a response has been recorded -resp_made()-,&amp;#10;    this function checks whether it is reinforced&amp;#10;    and gives the reward if shouldBeReinforced flag is True &amp;#10;    After recording in a csv, goes to the next line '''&amp;#10;    global credits, shouldBeReinforced, nReinforcers # globals because these are used outside&amp;#10;    &amp;#10;    if shouldBeReinforced:&amp;#10;        nReinforcers += 1&amp;#10;        credits += float(expInfo['credits_per_rnf'])&amp;#10;        reward_sound.play()&amp;#10;        for frameN in range(40): # show for bit more than half a sec (60 frames = 1 sec)&amp;#10;            #reward_txt.draw()&amp;#10;            circle_resp.setOpacity(0)&amp;#10;            coin.setOpacity(1)&amp;#10;            win.flip()&amp;#10;    trials.addData(&quot;wasRnf&quot;, shouldBeReinforced)&amp;#10;    thisExp.nextEntry()&amp;#10;&amp;#10;    shouldBeReinforced = 0 # reset shouldBeReinforced flag&amp;#10;&amp;#10;def resp_made():&amp;#10;    global credits, nResp # credits var updates troughout the experiment&amp;#10;    ''' after a resp is made, save it in the csv file and show circle '''&amp;#10;    if phase == &quot;training&quot;:&amp;#10;        if key_resp_2.keys in [&quot;left&quot;, &quot;right&quot;]: # this updates the 2-element array with joy_x pos&amp;#10;            joy_posx_array.pop(0)&amp;#10;            joy_posx_array.append(joy_x)&amp;#10;            # save data in csv &amp;#10;            trials.addData(&quot;key_resp_2.keys&quot;, key_resp_2.keys)&amp;#10;            trials.addData(&quot;key_resp_2.rt&quot;, str(globalClock.getTime()))&amp;#10;            #trials.addData(&quot;t&quot;, str(globalClock.getTime()))&amp;#10;            #trials.addData(&quot;devalued&quot;, expInfo['devalued'])&amp;#10;&amp;#10;        elif key_resp_2.keys in [&quot;up&quot;, &quot;down&quot;]: # this updates the 2-element array with joy_y pos&amp;#10;            joy_posx_array.pop(0)&amp;#10;            joy_posx_array.pop(0)&amp;#10;            joy_posx_array.append(joy_y)&amp;#10;            #save data in csv&amp;#10;            trials.addData(&quot;key_resp_2.keys&quot;, key_resp_2.keys)&amp;#10;            trials.addData(&quot;key_resp_2.rt&quot;, str(globalClock.getTime()))&amp;#10;        #thisExp.nextEntry()&amp;#10;&amp;#10;    elif phase == &quot;choice&quot;:&amp;#10;        if key_resp_4.keys in [&quot;left&quot;, &quot;right&quot;]: # this updates the 2-element array with joy_x pos&amp;#10;            joy_posx_array.pop(0)&amp;#10;            joy_posx_array.append(joy_x)&amp;#10;            # save data in csv &amp;#10;            trials.addData(&quot;key_resp_4.keys&quot;, key_resp_4.keys)&amp;#10;            trials.addData(&quot;key_resp_4.rt&quot;, str(globalClock.getTime()))&amp;#10;            #trials.addData(&quot;devalued&quot;, expInfo['devalued'])&amp;#10;&amp;#10;        elif key_resp_4.keys in [&quot;up&quot;, &quot;down&quot;]: # this updates the 2-element array with joy_y pos&amp;#10;            joy_posx_array.pop(0)&amp;#10;            joy_posx_array.pop(0)&amp;#10;            joy_posx_array.append(joy_y)&amp;#10;            trials.addData(&quot;key_resp_4.keys&quot;, key_resp_4.keys)&amp;#10;            trials.addData(&quot;key_resp_4.rt&quot;, str(globalClock.getTime()))&amp;#10;            #trials.addData(&quot;devalued&quot;, expInfo['devalued'])&amp;#10;        thisExp.nextEntry() # it does not call giveRnf(), so needs to go to next line in csv here&amp;#10;&amp;#10;    if phase == &quot;training&quot;:&amp;#10;        if key_resp_2.keys in [corrResp]:&amp;#10;            nResp += 1&amp;#10;            credits -= float(expInfo['cost_response'])&amp;#10;            coin_sound.play()&amp;#10;            #print(&quot;correct resp&quot;)&amp;#10;            for nframes in range(3):&amp;#10;                circle_resp.setOpacity(1)&amp;#10;                #stim_pressed.setOpacity(1)&amp;#10;            #'resp', 't', 'participant', 'session', 'trial', &amp;#10;            #writer_object.writerow([key_resp_2.keys, str(globalClock.getTime()), expInfo['participant'], expInfo['session'], str(trials.thisN)])&amp;#10;            checkRnf() # call checkRnf function to see whether it's reinforced&amp;#10;    elif phase == &quot;choice&quot;:&amp;#10;        if key_resp_4.keys in [corrResp1, corrResp2]:&amp;#10;            #credits -= 1&amp;#10;            #coin_sound.play() # no sound for choice stage&amp;#10;            #print(&quot;correct resp&quot;)&amp;#10;            for nframes in range(3):&amp;#10;                circle_resp_choice.setOpacity(1)&amp;#10;                #stim_pressed.setOpacity(1)&amp;#10;            #checkRnf()&amp;#10;&amp;#10;#### END BEGIN EXPERIMENT SNIPPET ####&amp;#10;" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;#### BEGIN ROUTINE SNIPPET FOR TRAINING ROUTINE ####&amp;#10;&amp;#10;# Initialise parameters at the beginning of each block (routine)&amp;#10;phase = &quot;training&quot;&amp;#10;&amp;#10;shouldBeReinforced = 0 # flag to set next reinforcer for RI schedule&amp;#10;&amp;#10;tickClock = core.CountdownTimer(1) # this is to tick every second for reward availability in the RI schedule&amp;#10;&amp;#10;#print(expInfo['session'])&amp;#10;&amp;#10;#### FINISH BEGIN ROUTINE SNIPPET FOR TRAINING ROUTINE ####&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="&amp;#10;#### END ROUTINE SNIPPET FOR TRAINING ROUTINE ####&amp;#10;&amp;#10;&amp;#10;&amp;#10;#### FINISH END ROUTINE SNIPPET FOR TRAINING ROUTINE ####" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;#### EACH FRAME SNIPPET ####&amp;#10;&amp;#10;# show debugging stuff?&amp;#10;if debugging:&amp;#10;    show_debugging_stuff()&amp;#10;&amp;#10;# Get position of x and y in joystick&amp;#10;joy_x, joy_y = joy.getX(), joy.getY()&amp;#10;&amp;#10;joy_posx_array.append(joy_x)&amp;#10;joy_posy_array.append(joy_y)&amp;#10;&amp;#10;if len(joy_posx_array) &gt; 2:&amp;#10;    joy_posx_array.pop(0)&amp;#10;&amp;#10;if len(joy_posy_array) &gt; 2:&amp;#10;    joy_posy_array.pop(0)&amp;#10;&amp;#10;# check whether reward is available to collect&amp;#10;# this runs only if a response is not currently being made&amp;#10;# this avoids rewarding maintaining the joystick in a position&amp;#10;&amp;#10;if joy_posx_array not in [[1, 1], [-1,-1]] and joy_posy_array not in [[1, 1], [-1,-1]]: # pos_array not in [[&quot;left&quot;,&quot;left&quot;], [&quot;right&quot;,&quot;right&quot;], [&quot;up&quot;, &quot;up&quot;],[&quot;down&quot;,&quot;down&quot;]]:&amp;#10;&amp;#10;    if not shouldBeReinforced and tickClock.getTime() &lt;= 0:&amp;#10;        shouldBeReinforced = np.random.binomial(1, 1/int(expInfo[&quot;interval&quot;]))&amp;#10;        tickClock.reset()&amp;#10;&amp;#10;    # assign key_resp to &quot;up&quot;, &quot;down&quot;, etc.&amp;#10;    if joy_y == -1:&amp;#10;        key_resp_2.keys = &quot;up&quot;&amp;#10;        key_resp_2.rt = str(globalClock.getTime())&amp;#10;        resp_made() &amp;#10;    elif joy_y == 1:&amp;#10;        key_resp_2.keys = &quot;down&quot;&amp;#10;        key_resp_2.rt = str(globalClock.getTime())&amp;#10;        resp_made()&amp;#10;    elif joy_x == -1:&amp;#10;        key_resp_2.keys = &quot;left&quot;&amp;#10;        key_resp_2.rt = str(globalClock.getTime())&amp;#10;        resp_made()&amp;#10;    elif joy_x == 1:&amp;#10;        key_resp_2.keys = &quot;right&quot;&amp;#10;        key_resp_2.rt = str(globalClock.getTime())&amp;#10;        resp_made()&amp;#10;    #resp_made() # a response has been recorded; run the functions associated with a response &amp;#10;&amp;#10;#### END EACH FRAME SNIPPET ####&amp;#10;" valType="extendedCode"/>
+      </CodeComponent>
+      <ImageComponent name="coin">
+        <Param name="opacity" updates="set every frame" val="0.15" valType="code"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="coin" valType="code"/>
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$duration" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$coin_img" valType="str"/>
+        <Param name="size" updates="constant" val="(0.22, 0.22)" valType="code"/>
+      </ImageComponent>
+    </Routine>
+    <Routine name="instr_after_consumption_test">
+      <TextComponent name="time_is_up_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="time_is_up_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Time is up!&amp;#10;&amp;#10;Now press any key to continue." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_17">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_17" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
+    <Routine name="goodbye">
+      <TextComponent name="final_txt_1">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="final_txt_1" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="End of the experiment. Thanks for participating!&amp;#10;&amp;#10;Please call the experimenter.&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.06" valType="code"/>
+      </TextComponent>
+      <TextComponent name="credits_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="credits_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="yellow" valType="str"/>
+        <Param name="text" updates="set every repeat" val="str($(credits/100)) + ' dollars'" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -0.35)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.25" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_12">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_12" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="'c'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="False" valType="bool"/>
+      </KeyboardComponent>
+      <CodeComponent name="code_8">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_8" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="payout_this_session = (nReinforcers*float(expInfo['credits_per_rnf']) - nResp*float(expInfo['cost_response']))/100.0&amp;#10;&amp;#10;print(&quot;credits: %.2f&quot;)%credits&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="instr1"/>
+    <Routine name="instr1_1"/>
+    <Routine name="instr_stim1"/>
+    <Routine name="instr_stim2"/>
+    <Routine name="instr_stim3"/>
+    <Routine name="instr_stim4"/>
+    <Routine name="instr2_3"/>
+    <Routine name="instr_2_3_1"/>
+    <Routine name="instr_2_4"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_3">
+      <Param name="conditionsFile" updates="None" val="$'conditions_piggy_bank_'+expInfo['session']+'.xlsx'" valType="str"/>
+      <Param name="name" updates="None" val="trials_3" valType="code"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="2" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="conditionsFile" updates="None" val="conditions3.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('condition', u'under1'), ('stimulus', u'stim/up_resp_img.png'), ('position', [0, -0.5]), ('corrResp', u'up'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'u'), ('rand_num', 0.8223968692538958), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under2'), ('stimulus', u'stim/right_resp_img.png'), ('position', [-0.5, 0]), ('corrResp', u'right'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'r'), ('rand_num', 0.6538757657076477), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', 0.49769800692193755), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', 0.435164464143887), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under1_vs_under2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 5), ('aux1', None), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', u'stim/up_resp_img.png'), ('stimulus_choice2', u'stim/right_resp_img.png'), ('condition_choice', u'under'), ('position1', u'up'), ('position2', u'right'), ('phase', u'test'), ('corrResp1', u'up'), ('corrResp2', u'right'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'silver'), ('outcome_choice2', u'gold'), ('cond_val1', u'deval'), ('cond_val2', u'val'), ('corrResp_ct', None)]), OrderedDict([('condition', u'over1_vs_over2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 5), ('aux1', None), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', u'stim/left_resp_img.png'), ('stimulus_choice2', u'stim/down_resp_img.png'), ('condition_choice', u'over'), ('position1', u'left'), ('position2', u'down'), ('phase', u'test'), ('corrResp1', u'left'), ('corrResp2', u'down'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'gold'), ('outcome_choice2', u'silver'), ('cond_val1', u'val'), ('cond_val2', u'deval'), ('corrResp_ct', None)])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="0:6" valType="str"/>
+    </LoopInitiator>
+    <Routine name="training"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="shouldRun"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_consumption_test">
+      <Param name="conditionsFile" updates="None" val="runConsumptionTest.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials_consumption_test" valType="code"/>
+      <Param name="isTrials" updates="None" val="False" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="$nRepsConsumptionTest" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('nRepsConsumptionTest', 1)])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="piggy_bank_partially_full"/>
+    <Routine name="instr_before_consumption_test"/>
+    <Routine name="consumption_test1"/>
+    <Routine name="instr_after_consumption_test"/>
+    <LoopTerminator name="trials_consumption_test"/>
+    <LoopTerminator name="trials_3"/>
+    <Routine name="shouldRun_2"/>
+    <LoopInitiator loopType="TrialHandler" name="choice_block">
+      <Param name="conditionsFile" updates="None" val="runBlock.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="choice_block" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="$nRepsChoice" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="piggy_bank_full"/>
+    <Routine name="instr_before_consumption_test"/>
+    <Routine name="consumption_test1"/>
+    <Routine name="instr_after_consumption_test"/>
+    <Routine name="instr_choice_test"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_2">
+      <Param name="conditionsFile" updates="None" val="conditions3.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('condition', u'under1'), ('stimulus', u'stim/up_resp_img.png'), ('position', [0, -0.5]), ('corrResp', u'up'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'u'), ('rand_num', 0.8223968692538958), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under2'), ('stimulus', u'stim/right_resp_img.png'), ('position', [-0.5, 0]), ('corrResp', u'right'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'r'), ('rand_num', 0.6538757657076477), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', 0.49769800692193755), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', 0.435164464143887), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under1_vs_under2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 5), ('aux1', None), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', u'stim/up_resp_img.png'), ('stimulus_choice2', u'stim/right_resp_img.png'), ('condition_choice', u'under'), ('position1', u'up'), ('position2', u'right'), ('phase', u'test'), ('corrResp1', u'up'), ('corrResp2', u'right'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'silver'), ('outcome_choice2', u'gold'), ('cond_val1', u'deval'), ('cond_val2', u'val'), ('corrResp_ct', None)]), OrderedDict([('condition', u'over1_vs_over2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 5), ('aux1', None), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', u'stim/left_resp_img.png'), ('stimulus_choice2', u'stim/down_resp_img.png'), ('condition_choice', u'over'), ('position1', u'left'), ('position2', u'down'), ('phase', u'test'), ('corrResp1', u'left'), ('corrResp2', u'down'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'gold'), ('outcome_choice2', u'silver'), ('cond_val1', u'val'), ('cond_val2', u'deval'), ('corrResp_ct', None)])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="6:8" valType="str"/>
+    </LoopInitiator>
+    <Routine name="choice_test"/>
+    <LoopTerminator name="trials_2"/>
+    <LoopTerminator name="choice_block"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_4">
+      <Param name="conditionsFile" updates="None" val="conditions2.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials_4" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[{'corrResp': u'down', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'd', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/left_resp_img_pressed.png', 'condition': u'under1', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/down_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.6608618722261297, 'position': [0, 0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'left', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'l', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/right_resp_img_pressed.png', 'condition': u'under2', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/left_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.6283020920354094, 'position': [0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.2951418491114791, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.37080965395198506, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': None, 'cond_val': None, 'devalued_coin': u'silver', 'duration': 5, 'aux1': None, 'corrResp1': u'down', 'corrResp2': u'left', 'position2': [0.5, 0], 'position1': [0, 0.5], 'outcome_choice1': u'silver', 'stimulus_choice1': u'stim/down_resp_img.png', 'coin_img': None, 'phase': u'test', 'stimulus_pressed': None, 'condition': u'under1_vs_under2', 'condition_choice': u'under', 'outcome': None, 'stimulus': None, 'stimulus_choice2': u'stim/left_resp_img.png', 'cond_val1': u'deval', 'cond_val2': u'val', 'rand_num': None, 'position': None, 'outcome_choice2': u'gold', 'stimulus_pressed_choice1': u'stim/left_resp_img_pressed.png', 'stimulus_pressed_choice2': u'stim/right_resp_img_pressed.png'}, {'corrResp': None, 'cond_val': None, 'devalued_coin': u'silver', 'duration': 5, 'aux1': None, 'corrResp1': u'right', 'corrResp2': u'up', 'position2': [0, -0.5], 'position1': [-0.5, 0], 'outcome_choice1': u'gold', 'stimulus_choice1': u'stim/right_resp_img.png', 'coin_img': None, 'phase': u'test', 'stimulus_pressed': None, 'condition': u'over1_vs_over2', 'condition_choice': u'over', 'outcome': None, 'stimulus': None, 'stimulus_choice2': u'stim/up_resp_img.png', 'cond_val1': u'val', 'cond_val2': u'deval', 'rand_num': None, 'position': None, 'outcome_choice2': u'silver', 'stimulus_pressed_choice1': u'stim/down_resp_img_pressed.png', 'stimulus_pressed_choice2': u'stim/up_resp_img_pressed.png'}]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="0:4" valType="str"/>
+    </LoopInitiator>
+    <Routine name="contingency_test"/>
+    <LoopTerminator name="trials_4"/>
+    <Routine name="goodbye"/>
+  </Flow>
+</PsychoPy2experiment>
