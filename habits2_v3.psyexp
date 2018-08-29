@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="1.90.1">
+<PsychoPy2experiment encoding="utf-8" version="1.90.3">
   <Settings>
     <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
     <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
-    <Param name="Experiment info" updates="None" val="{u'participant': u'01', u'credits_per_rnf': u'25', u'schedule': u'RI', u'interval': u'10', u'session': u'1', u'experimenter': u'o', u'cost_response': u'1'}" valType="code"/>
+    <Param name="Experiment info" updates="None" val="{u'participant': u'01', u'credits_per_rnf': u'15', u'schedule': u'RI', u'interval': u'10', u'session': u'1', u'experimenter': u'o', u'cost_response': u'1'}" valType="code"/>
     <Param name="JS libs" updates="None" val="packaged" valType="str"/>
     <Param name="Units" updates="None" val="use prefs" valType="str"/>
     <Param name="Save excel file" updates="None" val="False" valType="bool"/>
@@ -15,7 +15,7 @@
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
-    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save csv file" updates="None" val="True" valType="bool"/>
     <Param name="OSF Project ID" updates="None" val="" valType="str"/>
     <Param name="Save log file" updates="None" val="True" valType="bool"/>
     <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
@@ -322,7 +322,7 @@
         <Param name="name" updates="None" val="instr_test_txt" valType="code"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
         <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="text" updates="constant" val="&amp;#10;Welcome. In this experiment you will have the chance to earn some extra money.&amp;#10;&amp;#10;Using your joystick, you will take actions to win coins that will be cashed out for real money. Therefore, the more coins you collect, the more cash we will pay you when you are finished.&amp;#10;&amp;#10;Coins can be silver or gold and are worth 0.25 dollars, regardless of color.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
+        <Param name="text" updates="constant" val="&amp;#10;Welcome. In this experiment you will have the chance to earn some extra money.&amp;#10;&amp;#10;Using your joystick, you will take actions to win coins that will be cashed out for real money. Therefore, the more coins you collect, the more cash we will pay you when you are finished.&amp;#10;&amp;#10;Coins can be silver or gold and are worth 0.15 dollars, regardless of color.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -1386,7 +1386,7 @@
         <Param name="name" updates="None" val="instr_devaluation_txt" valType="code"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
         <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="text" updates="constant" val="The following piggy bank:&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;is now full. &amp;#10;&amp;#10;No further coins can be deposited in this piggy bank.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="str"/>
+        <Param name="text" updates="constant" val="The following piggy bank:&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;is now FULL. &amp;#10;&amp;#10;No further coins can be deposited in this piggy bank.&amp;#10;&amp;#10;&amp;#10;(Press any key to continue)&amp;#10;" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -1430,7 +1430,7 @@
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="allowedKeys" updates="constant" val="'c'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="store" updates="constant" val="last key" valType="str"/>
@@ -1635,7 +1635,7 @@
         <Param name="name" updates="None" val="instr_devaluation_txt_2" valType="code"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
         <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="text" updates="constant" val="In this last part of the experiment you will have the opportunity to perform two actions during a trial.&amp;#10;&amp;#10;The allowed actions will be signalled by their respective stimuli. For example, if you see the stimuli below you will be allowed to make left and up responses at the same time.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;This time we will not show you the coins you are earning, the flashing triangle, nor the earnings you have so far. However, we will keep inserting the coins you win in their respective piggy banks. Apart from that, nothing about the game has changed, and you should &amp;#10;continue playing as before. &amp;#10;&amp;#10;&amp;#10; &amp;#10;(Press any key to continue)" valType="str"/>
+        <Param name="text" updates="constant" val="In this last part of the experiment you will have the opportunity to perform two actions during a trial.&amp;#10;&amp;#10;The allowed actions will be signalled by their respective stimuli. For example, if you see the stimuli below you will be allowed to make left and up responses at the same time.&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;This time we will not show you the coins you are earning, the flashing triangle, nor the earnings you have so far. No sounds will be played either. Apart from that, nothing about the game has changed, and you should &amp;#10;continue playing as before. We will keep inserting the coins you win in their respective piggy banks, provided they are not full.&amp;#10;&amp;#10;&amp;#10; &amp;#10;(Press any key to continue)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
@@ -1709,6 +1709,44 @@
         <Param name="image" updates="constant" val="stim/up_resp_img.png" valType="str"/>
         <Param name="size" updates="constant" val="(0.3, 0.3)" valType="code"/>
       </ImageComponent>
+    </Routine>
+    <Routine name="instr_after_consumption_test">
+      <TextComponent name="time_is_up_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="time_is_up_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="black" valType="str"/>
+        <Param name="text" updates="constant" val="Time is up!&amp;#10;&amp;#10;Now press any key to continue." valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="key_resp_17">
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_17" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
     </Routine>
     <Routine name="instr_2_4">
       <TextComponent name="instr_2_4_txt">
@@ -1840,17 +1878,17 @@
         <Param name="size" updates="constant" val="(0.22, 0.22)" valType="code"/>
       </ImageComponent>
     </Routine>
-    <Routine name="instr_after_consumption_test">
-      <TextComponent name="time_is_up_txt">
+    <Routine name="contingency_awareness_test">
+      <TextComponent name="agreement_txt">
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="name" updates="None" val="time_is_up_txt" valType="code"/>
+        <Param name="name" updates="None" val="agreement_txt" valType="code"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
         <Param name="color" updates="constant" val="black" valType="str"/>
-        <Param name="text" updates="constant" val="Time is up!&amp;#10;&amp;#10;Now press any key to continue." valType="str"/>
+        <Param name="text" updates="constant" val="Please rate how much you agree with the following statements. Make your selection by clicking on the rating scale with the mouse, confirm pressing ENTER or clicking on the number that will appear below. " valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0.8)" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -1859,24 +1897,66 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.1" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="key_resp_17">
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="key_resp_17" valType="code"/>
+      <TextComponent name="contingency_awareness_txt">
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="name" updates="None" val="contingency_awareness_txt" valType="code"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+        <Param name="color" updates="constant" val="yellow" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$question" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="pos" updates="constant" val="(0, 0.4)" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="allowedKeys" updates="constant" val="" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="store" updates="constant" val="nothing" valType="str"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
+        <Param name="font" updates="constant" val="Comic Sans" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.08" valType="code"/>
+      </TextComponent>
+      <RatingScaleComponent name="rating_awareness">
+        <Param name="labels" updates="constant" val="not agree at all, completely agree" valType="str"/>
+        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
+        <Param name="high" updates="constant" val="10" valType="code"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="marker" updates="constant" val="triangle" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="markerStart" updates="constant" val="5" valType="str"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="size" updates="constant" val="1.0" valType="code"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="False" valType="bool"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="rating_awareness" valType="code"/>
+        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
+      </RatingScaleComponent>
+    </Routine>
+    <Routine name="shouldRun4">
+      <CodeComponent name="code_9">
+        <Param name="Begin Experiment" updates="constant" val="&amp;#10;# should run contingency awareness questions?&amp;#10;&amp;#10;if expInfo['session'] == '2':&amp;#10;    print(&quot;session 2&quot;)&amp;#10;    nRepsContingencyAwareness = 1&amp;#10;elif expInfo['session'] == '1':&amp;#10;    nRepsContingencyAwareness = 0&amp;#10;    print(&quot;session 1&quot;)&amp;#10;else:&amp;#10;    print(&quot;something diff from 1 or 2 for session number; weird!&quot;)" valType="extendedCode"/>
+        <Param name="name" updates="None" val="code_9" valType="code"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+      </CodeComponent>
     </Routine>
     <Routine name="goodbye">
       <TextComponent name="final_txt_1">
@@ -2020,7 +2100,7 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="3" valType="code"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('condition', u'under1'), ('stimulus', u'stim/up_resp_img.png'), ('position', [0, -0.5]), ('corrResp', u'up'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'u'), ('rand_num', 0.8223968692538958), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under2'), ('stimulus', u'stim/right_resp_img.png'), ('position', [-0.5, 0]), ('corrResp', u'right'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'r'), ('rand_num', 0.6538757657076477), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', 0.49769800692193755), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', 0.435164464143887), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 1), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 1), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under1_vs_under2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 5), ('aux1', None), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', u'stim/up_resp_img.png'), ('stimulus_choice2', u'stim/right_resp_img.png'), ('condition_choice', u'under'), ('position1', u'up'), ('position2', u'right'), ('phase', u'test'), ('corrResp1', u'up'), ('corrResp2', u'right'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'silver'), ('outcome_choice2', u'gold'), ('cond_val1', u'deval'), ('cond_val2', u'val'), ('corrResp_ct', None)]), OrderedDict([('condition', u'over1_vs_over2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 5), ('aux1', None), ('rand_num', None), ('devalued_coin', u'silver'), ('stimulus_choice1', u'stim/left_resp_img.png'), ('stimulus_choice2', u'stim/down_resp_img.png'), ('condition_choice', u'over'), ('position1', u'left'), ('position2', u'down'), ('phase', u'test'), ('corrResp1', u'left'), ('corrResp2', u'down'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'gold'), ('outcome_choice2', u'silver'), ('cond_val1', u'val'), ('cond_val2', u'deval'), ('corrResp_ct', None)])]" valType="str"/>
       <Param name="Selected rows" updates="None" val="6:8" valType="str"/>
@@ -2029,18 +2109,32 @@
     <LoopTerminator name="trials_2"/>
     <LoopTerminator name="choice_block"/>
     <LoopInitiator loopType="TrialHandler" name="trials_4">
-      <Param name="conditionsFile" updates="None" val="conditions2.xlsx" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="conditions3.xlsx" valType="str"/>
       <Param name="name" updates="None" val="trials_4" valType="code"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
-      <Param name="conditions" updates="None" val="[{'corrResp': u'down', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'd', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/left_resp_img_pressed.png', 'condition': u'under1', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/down_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.6608618722261297, 'position': [0, 0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'left', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'l', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/right_resp_img_pressed.png', 'condition': u'under2', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/left_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.6283020920354094, 'position': [0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.2951418491114791, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': 0.37080965395198506, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'right', 'cond_val': u'val', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'r', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/gold_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/down_resp_img_pressed.png', 'condition': u'over1', 'condition_choice': None, 'outcome': u'gold', 'stimulus': u'stim/right_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [-0.5, 0], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': u'up', 'cond_val': u'deval', 'devalued_coin': u'silver', 'duration': 1, 'aux1': u'u', 'corrResp1': None, 'corrResp2': None, 'position2': None, 'position1': None, 'outcome_choice1': None, 'stimulus_choice1': None, 'coin_img': u'stim/silver_coin.png', 'phase': u'training', 'stimulus_pressed': u'stim/up_resp_img_pressed.png', 'condition': u'over2', 'condition_choice': None, 'outcome': u'silver', 'stimulus': u'stim/up_resp_img.png', 'stimulus_choice2': None, 'cond_val1': None, 'cond_val2': None, 'rand_num': None, 'position': [0, -0.5], 'outcome_choice2': None, 'stimulus_pressed_choice1': None, 'stimulus_pressed_choice2': None}, {'corrResp': None, 'cond_val': None, 'devalued_coin': u'silver', 'duration': 5, 'aux1': None, 'corrResp1': u'down', 'corrResp2': u'left', 'position2': [0.5, 0], 'position1': [0, 0.5], 'outcome_choice1': u'silver', 'stimulus_choice1': u'stim/down_resp_img.png', 'coin_img': None, 'phase': u'test', 'stimulus_pressed': None, 'condition': u'under1_vs_under2', 'condition_choice': u'under', 'outcome': None, 'stimulus': None, 'stimulus_choice2': u'stim/left_resp_img.png', 'cond_val1': u'deval', 'cond_val2': u'val', 'rand_num': None, 'position': None, 'outcome_choice2': u'gold', 'stimulus_pressed_choice1': u'stim/left_resp_img_pressed.png', 'stimulus_pressed_choice2': u'stim/right_resp_img_pressed.png'}, {'corrResp': None, 'cond_val': None, 'devalued_coin': u'silver', 'duration': 5, 'aux1': None, 'corrResp1': u'right', 'corrResp2': u'up', 'position2': [0, -0.5], 'position1': [-0.5, 0], 'outcome_choice1': u'gold', 'stimulus_choice1': u'stim/right_resp_img.png', 'coin_img': None, 'phase': u'test', 'stimulus_pressed': None, 'condition': u'over1_vs_over2', 'condition_choice': u'over', 'outcome': None, 'stimulus': None, 'stimulus_choice2': u'stim/up_resp_img.png', 'cond_val1': u'val', 'cond_val2': u'deval', 'rand_num': None, 'position': None, 'outcome_choice2': u'silver', 'stimulus_pressed_choice1': u'stim/down_resp_img_pressed.png', 'stimulus_pressed_choice2': u'stim/up_resp_img_pressed.png'}]" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('condition', u'under1'), ('stimulus', u'stim/up_resp_img.png'), ('position', [0, -0.5]), ('corrResp', u'up'), ('coin_img', u'stim/silver_coin.png'), ('duration', 3), ('aux1', u'u'), ('rand_num', 0.5553364983749125), ('devalued_coin', u'gold'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under2'), ('stimulus', u'stim/right_resp_img.png'), ('position', [-0.5, 0]), ('corrResp', u'right'), ('coin_img', u'stim/gold_coin.png'), ('duration', 3), ('aux1', u'r'), ('rand_num', 0.36658223159682446), ('devalued_coin', u'gold'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 3), ('aux1', u'l'), ('rand_num', 0.7587359836278071), ('devalued_coin', u'gold'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 3), ('aux1', u'd'), ('rand_num', 0.9313591191013568), ('devalued_coin', u'gold'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'over1'), ('stimulus', u'stim/left_resp_img.png'), ('position', [0.5, 0]), ('corrResp', u'left'), ('coin_img', u'stim/gold_coin.png'), ('duration', 3), ('aux1', u'l'), ('rand_num', None), ('devalued_coin', u'gold'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'gold'), ('cond_val', u'deval'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u'g')]), OrderedDict([('condition', u'over2'), ('stimulus', u'stim/down_resp_img.png'), ('position', [0, 0.5]), ('corrResp', u'down'), ('coin_img', u'stim/silver_coin.png'), ('duration', 3), ('aux1', u'd'), ('rand_num', None), ('devalued_coin', u'gold'), ('stimulus_choice1', None), ('stimulus_choice2', None), ('condition_choice', None), ('position1', None), ('position2', None), ('phase', u'training'), ('corrResp1', None), ('corrResp2', None), ('outcome', u'silver'), ('cond_val', u'val'), ('outcome_choice1', None), ('outcome_choice2', None), ('cond_val1', None), ('cond_val2', None), ('corrResp_ct', u's')]), OrderedDict([('condition', u'under1_vs_under2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 3), ('aux1', None), ('rand_num', None), ('devalued_coin', u'gold'), ('stimulus_choice1', u'stim/up_resp_img.png'), ('stimulus_choice2', u'stim/right_resp_img.png'), ('condition_choice', u'under'), ('position1', [0, -0.5]), ('position2', [-0.5, 0]), ('phase', u'test'), ('corrResp1', u'up'), ('corrResp2', u'right'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'silver'), ('outcome_choice2', u'gold'), ('cond_val1', u'val'), ('cond_val2', u'deval'), ('corrResp_ct', None)]), OrderedDict([('condition', u'over1_vs_over2'), ('stimulus', None), ('position', None), ('corrResp', None), ('coin_img', None), ('duration', 3), ('aux1', None), ('rand_num', None), ('devalued_coin', u'gold'), ('stimulus_choice1', u'stim/left_resp_img.png'), ('stimulus_choice2', u'stim/down_resp_img.png'), ('condition_choice', u'over'), ('position1', [0.5, 0]), ('position2', [0, 0.5]), ('phase', u'test'), ('corrResp1', u'left'), ('corrResp2', u'down'), ('outcome', None), ('cond_val', None), ('outcome_choice1', u'gold'), ('outcome_choice2', u'silver'), ('cond_val1', u'deval'), ('cond_val2', u'val'), ('corrResp_ct', None)])]" valType="str"/>
       <Param name="Selected rows" updates="None" val="0:4" valType="str"/>
     </LoopInitiator>
     <Routine name="contingency_test"/>
     <LoopTerminator name="trials_4"/>
+    <Routine name="shouldRun4"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_5">
+      <Param name="conditionsFile" updates="None" val="conditions_awareness.xlsx" valType="str"/>
+      <Param name="name" updates="None" val="trials_5" valType="code"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="$nRepsContingencyAwareness" valType="code"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('question', u'The more I responded with the correct action, the more coins I won, and viceversa')]), OrderedDict([('question', u'I won more when I left a long gap between each actions')]), OrderedDict([('question', u'I won more when I left a short gap between actions')]), OrderedDict([('question', u'The least I responded with the correct action, the more coins I won, and viceversa')])]" valType="str"/>
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+    </LoopInitiator>
+    <Routine name="contingency_awareness_test"/>
+    <LoopTerminator name="trials_5"/>
     <Routine name="goodbye"/>
   </Flow>
 </PsychoPy2experiment>
